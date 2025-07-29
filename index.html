@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TWILIGHT RAVENS</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="IMGs/LogoTWR.png">
+</head>
+<body>
+  <header>
+    <a href="index.html"><img class="HeaderLogo" src="IMGs/LogoTWR.png" alt="TWILIGHT RAVENS Logo" /></a>
+    <h1 class="headerH1Title">TWILIGHT RAVENS</h1>
+    <nav class="HeaderNav">
+      <a class="NavSobre" href="#sobre">Sobre</a>
+      <a class="NavSobre" href="#torneios">Torneios</a>
+      <a class="NavSobre" href="#transmissoes">Transmissões</a>
+      <a class="NavSobre" href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section id="home" class="scroll-reveal">
+  <section id="home">
+    <h2>Bem-vindo</h2>
+    <p>Somos a TWILIGHT RAVENS — campeonatos de Valorant com organização séria, partidas equilibradas e ambiente saudável para todos os níveis de jogadores.</p>
+    <img class="DescIMG" src="IMGs/TWR.png">
+  </section>
+  </section>
+
+  <section id="home" class="scroll-reveal">
+  <section id="sobre">
+    <h2>Quem Somos</h2>
+    <p>Nascemos para unir jogadores que buscam competição justa e comunidade ativa. Aqui, cada partida é tratada com seriedade e respeito.</p>
+    <img class="DescIMG" src="IMGs/Pessoas.png">
+  </section>
+  </section>
+
+  <section id="home" class="scroll-reveal">
+  <section id="torneios">
+    <h2>Próximos Campeonatos</h2>
+    <p>🗓️ Twilight Ravens 5x5 VALORANT — 15/12/2025 a 03/01/2026<br>
+    📍 Plataforma: Challengermode<br>
+    📺 Transmissão: Twitch @NiXxihn<br>
+    🔗 <a class="colorA" href="https://www.challengermode.com/">Inscreva-se aqui</a></p>
+    <img class="DescIMG" src="IMGs/Lan.png">
+  </section>
+  </section>
+
+  <section id="home" class="scroll-reveal">
+  <section id="transmissoes">
+    <h2>Transmissões Ao Vivo</h2>
+    <p>Assista todos os jogos ao vivo no nosso canal oficial: <a class="colorA" href="https://twitch.tv/NiXxihn">Twitch @NiXxihn</a></p>
+    <img class="DescIMG" src="IMGs/Twitch.png">
+  </section>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Entre em contato pelo Discord ou pela página do Challengermode para tirar dúvidas e receber suporte.</p>
+    <a class="colorA" href="https://discord.gg/hMJ8sjHn8H">Contato Via Discord</a></p>
+    <a class="colorA" href="https://www.challengermode.com/">Contato Via ChallengerMode</a></p>
+  </section>
+
+  <footer>
+    <div class="footerdiv">
+      <nav class="FooterNav">
+        <a class="fNavSobre" href="#sobre">Sobre</a>
+        <a class="fNavSobre" href="#torneios">Torneios</a>
+        <a class="fNavSobre" href="#transmissoes">Transmissões</a>
+        <a class="fNavSobre" href="#contato">Contato</a>
+      </nav>
+      <nav class="FooterNav2">
+        <a class="fcolorA" href="https://discord.gg/hMJ8sjHn8H">Contato Via Discord</a></p>
+        <a class="fcolorA" href="https://www.challengermode.com/">Contato Via ChallengerMode</a></p>
+      </nav>
+    </div>
+    &copy; 2025 TWILIGHT RAVENS. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, { threshold: 0.8 });
+
+  document.querySelectorAll('.scroll-reveal').forEach(el => {
+    observer.observe(el);
+  });
+</script>
+
